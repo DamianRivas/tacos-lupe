@@ -5,7 +5,7 @@ import style from "./coming-soon.styles.scss";
 
 const ComingSoon = () => (
   <section class={style["coming-soon"]}>
-    <img src="assets/images/tacos_lupe_transparent_trimmed.svg" />
+    <img src="assets/images/tacos_lupe_transparent_trimmed.png" />
     {/* <Logo /> */}
     <h1>Coming Soon!</h1>
     <h2>
