@@ -7,8 +7,12 @@ const ComingSoon = () => (
       src="assets/images/tacos_lupe_transparent_trimmed.png"
       width="1200"
       height="818"
+      alt="Tacos Lupe logo"
     />
-    <h1>Coming Soon!</h1>
+    <h1>
+      <span class="tacos-green">Coming</span>{" "}
+      <span class="lupe-red">Soon!</span>
+    </h1>
     <h2>
       <a href="tel:480-964-0025">(480) 964-0025</a>
     </h2>

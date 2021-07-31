@@ -26,10 +26,23 @@ body {
   text-decoration: none;
 }
 
+a {
+  color: var(--tacos-green);
+  text-decoration: underline;
+}
+
 ul {
   margin: 0;
 }
 
 #app {
   height: 100%;
+}
+
+.tacos-green {
+  color: var(--tacos-green);
+}
+
+.lupe-red {
+  color: var(--lupe-red);
 }
