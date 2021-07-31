@@ -5,11 +5,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--logo-background);
+  background-color: #000;
 
   h1 {
     text-align: center;
     font-size: 2.5em;
+    color: var(--main-text-background);
 
     @media screen and (max-height: 400px) {
       margin: 10px 0;
