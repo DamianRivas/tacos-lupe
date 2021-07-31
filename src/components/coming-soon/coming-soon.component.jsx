@@ -10,7 +10,7 @@ const ComingSoon = () => (
       alt="Tacos Lupe logo"
     />
     <h1>
-      <span class="tacos-green">Coming</span>{" "}
+      Redesign: <span class="tacos-green">Coming</span>{" "}
       <span class="lupe-red">Soon!</span>
     </h1>
     <h2>
