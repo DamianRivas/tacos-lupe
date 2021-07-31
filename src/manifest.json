@@ -1,11 +1,11 @@
 {
-  "name": "tacos-lupe",
-  "short_name": "tacos-lupe",
-  "start_url": "/",
+  "name": "Tacos Lupe",
+  "short_name": "Tacos Lupe",
+  "start_url": "https://tacoslupe.com",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "background_color": "#feb13b",
+  "theme_color": "#feb13b",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",

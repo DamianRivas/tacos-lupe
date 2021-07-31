@@ -1,0 +1,32 @@
+.coming-soon {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--logo-background);
+
+  h1 {
+    color: var(--tacos-green);
+    font-size: 2.5em;
+
+    @media screen and (max-height: 400px) {
+      margin: 10px 0;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+
+  img {
+    max-width: 1200px;
+    width: 80%;
+
+    @media screen and (orientation: landscape) {
+      width: 40%;
+    }
+  }
+}
