@@ -1,0 +1,30 @@
+.custom-button {
+  --button-height: 50px;
+  min-width: 165px;
+  width: auto;
+  height: var(--button-height);
+  line-height: var(--button-height);
+  padding: 0 35px 0 35px;
+  font-size: 1em;
+  font-family: "Patua One", sans-serif;
+  background-color: white;
+  transition: transform 0.1s ease;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  border-radius: calc(var(--button-height) / 2);
+  display: flex;
+  justify-content: center;
+  transition: all 0.1s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: var(--main-text-background);
+    transform: scale(1.1);
+    filter: drop-shadow(0 2px 0.25rem black);
+    background-color: var(--tacos-green);
+    transition: all 0.3s ease;
+  }
+}

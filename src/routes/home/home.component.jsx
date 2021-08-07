@@ -1,11 +1,18 @@
 import { h } from "preact";
-import style from "./home.styles.scss";
 
-import ComingSoon from "../../components/coming-soon/coming-soon.component";
+import Hero from "../../components/hero/hero.component";
+
+import style from "./home.styles.scss";
 
 const Home = () => (
   <div class={style.home}>
-    <ComingSoon />
+    <Hero />
+    <div class="container">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ut voluptas
+      consectetur autem rem quam, natus ipsum, nulla ducimus recusandae,
+      repudiandae aperiam assumenda magni? Nulla odio ducimus voluptas aliquid?
+      Excepturi!
+    </div>
   </div>
 );
 
