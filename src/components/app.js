@@ -9,7 +9,7 @@ import Profile from "../routes/profile";
 
 const App = () => (
   <div id="app">
-    {process.env.NODE_ENV === "development" ? <Header /> : null}
+    <Header />
     <Router>
       <Home path="/" />
       <Profile path="/profile/" user="me" />
