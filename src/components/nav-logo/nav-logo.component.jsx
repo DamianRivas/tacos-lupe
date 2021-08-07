@@ -7,11 +7,11 @@ const NavLogo = () => (
   <Link class={style["logo-container"]} href="/">
     <img
       class={style.chicken}
-      src="assets/images/tacos_lupe_chicken_trimmed_75.png"
+      src="/assets/images/tacos_lupe_chicken_trimmed_75.png"
       alt="Chicken Logo"
     />
     <img
-      src="assets/images/tacos_lupe_text_logo_75.png"
+      src="/assets/images/tacos_lupe_text_logo_75.png"
       alt="Tacos Lupe Logo"
     />
   </Link>
