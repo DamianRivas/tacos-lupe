@@ -7,11 +7,11 @@ import style from "./nav-links.styles.scss";
 const navData = [
   {
     href: "/about",
-    content: "About Us",
+    content: "About",
   },
   {
     href: "/visit",
-    content: "Visit Us",
+    content: "Visit",
   },
   {
     href: "/contact",

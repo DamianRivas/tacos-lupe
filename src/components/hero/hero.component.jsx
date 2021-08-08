@@ -14,7 +14,7 @@ const backgroundImage = {
 
 const Hero = () => (
   <div class={style.hero}>
-    <div class={style["background-image"]} style={{ ...backgroundImage }} />
+    <div class={style["background-image"]} style={backgroundImage} />
     <div class={style.content}>
       <div class={style.logo}>
         <img
