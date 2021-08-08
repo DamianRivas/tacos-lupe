@@ -15,7 +15,7 @@ const ContentSection = ({ title, body, imageSrc = null }) => {
         </div>
       ) : null}
       <div class={style["content-body"]}>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <p>{body}</p>
       </div>
     </section>
