@@ -11,6 +11,7 @@ const NavLogo = () => (
       alt="Chicken Logo"
     />
     <img
+      class={style["logo-text"]}
       src="/assets/images/tacos_lupe_text_logo_75.png"
       alt="Tacos Lupe Logo"
     />

@@ -23,7 +23,9 @@ const Hero = () => (
         />
       </div>
       <div class={style["button-row"]}>
-        <CustomButton>Call</CustomButton>
+        <a href="tel:480-964-0025">
+          <CustomButton>Call</CustomButton>
+        </a>
         <CustomButton>Visit</CustomButton>
       </div>
     </div>
