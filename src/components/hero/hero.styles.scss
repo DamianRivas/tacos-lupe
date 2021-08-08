@@ -37,6 +37,10 @@
 
       img {
         width: 100%;
+
+        @media screen and (max-height: 768px) and (orientation: portrait) {
+          max-height: 40vh;
+        }
       }
     }
 
@@ -52,6 +56,27 @@
       button:last-child,
       a:last-child {
         margin: 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 60%;
+        }
+      }
+
+      @media screen and (orientation: portrait) {
+        .button-row {
+          flex-direction: column;
+          button,
+          a {
+            margin: 0;
+          }
+        }
       }
     }
   }

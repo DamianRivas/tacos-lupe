@@ -5,8 +5,11 @@
   --tacos-green: #329845;
   --lupe-red: #cf1f29;
   --header-height: 80px;
-
   --content-width: 1000px;
+
+  @media screen and (max-height: 400px) {
+    --header-height: 50px;
+  }
 }
 
 body {

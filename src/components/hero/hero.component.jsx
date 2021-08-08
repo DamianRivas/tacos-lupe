@@ -24,7 +24,7 @@ const Hero = () => (
       </div>
       <div class={style["button-row"]}>
         <a href="tel:480-964-0025">
-          <CustomButton>Call</CustomButton>
+          <CustomButton style={{ "margin-bottom": "1.3em" }}>Call</CustomButton>
         </a>
         <CustomButton>Visit</CustomButton>
       </div>
