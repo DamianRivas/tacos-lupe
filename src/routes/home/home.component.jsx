@@ -9,14 +9,18 @@ const Home = () => {
   const sectionsData = [
     {
       title: "Real Mexican Tacos",
-      body: `The best place to get genuine, Mexican cuisine in Arizona.
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, quae sapiente. Sed eveniet voluptas non accusantium dicta reprehenderit, veniam maiores minima ipsum omnis adipisci asperiores mollitia et, aliquam cum perferendis? Enim suscipit, exercitationem non sunt quia similique repudiandae iste ex cupiditate voluptatum facere, qui ratione?`,
+      body: `The best place to get genuine, Mexican cuisine in Arizona. Enjoy authentic, homemade tacos from your local taqueria in Mesa, AZ! Tacos Lupe creates delicious meals using fresh ingredients and real Mexican recipes, never cutting corners. We take pride in our tacos, and we know once you visit our taqueria, you'll never go anywhere else.`,
       imageSrc: "/assets/images/food/tacos-al-pastor/tacos-al-pastor-l.jpg",
     },
     {
       title: "Classic Mexican Experience",
-      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima iste suscipit repellendus labore illum, qui necessitatibus minus quia, error molestiae velit eaque, dicta vitae nulla dolorem ratione ipsum reprehenderit exercitationem adipisci? Eaque dolorem sit eligendi quas a minus architecto. Facere exercitationem corrupti non iste quam.",
+      body: `Unlike a lot of "Mexican" restaurants, our menu consists of real, Mexican favorites from our home south of the border. Passed down over generations and threaded throughout our culture, our authentic tacos are loved by everyone who tries them. We refuse to cut corners or make concessions for costs because our customer satisfaction is always the top priority. Visit your local taqueria today for a Mexican experience you'll never forget!`,
       imageSrc: "/assets/images/food/carne-asada/carne-asada-xl.jpg",
+    },
+    {
+      title: "Freshest Ingredients",
+      body: `At Tacos Lupe, we understand that the key to great tacos lies in the ingredients. We use high-quality meats and produce in our meals, ensuring there is a burst of flavor in every bite. Each taco, quesadille, and chimichanga is handcrafted for the perfect flavor experience. No matter your tastes, rest assured that you'll find something to love at your local taqueria!`,
+      imageSrc: "/assets/images/food/tacos-con-chile/tacos-con-chile-l.jpg",
     },
   ];
 

@@ -1,4 +1,4 @@
-$tablet: 768px;
+$tablet: 1080px;
 
 .c-split {
   width: 100%;
@@ -13,7 +13,6 @@ $tablet: 768px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 2rem;
     padding: 0 1.875rem;
 
     h2 {
@@ -30,6 +29,10 @@ $tablet: 768px;
         rgba(50, 152, 69, 50)
       );
       transform: translateX(-8vw);
+
+      @media screen and (min-width: 769px) {
+        margin-top: 10rem;
+      }
     }
 
     @media screen and (max-width: $tablet) {
