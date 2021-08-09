@@ -12,6 +12,12 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: auto;
@@ -23,6 +29,7 @@ body {
   width: 100vw;
   padding: 0;
   margin: 0;
+  border: none;
   background: var(--main-text-background);
   font-family: "Helvetica Neue", arial, sans-serif;
   font-weight: 400;
@@ -32,12 +39,6 @@ body {
   background-color: var(--main-text-background);
   background-image: url("/assets/images/back-pattern.png");
   background-size: 84px;
-}
-
-* {
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
 }
 
 a {

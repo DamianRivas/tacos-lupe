@@ -1,5 +1,7 @@
 import { h } from "preact";
 
+import CustomButton from "../../components/custom-button/custom-button.component";
+
 import style from "./visit.styles.scss";
 
 const Visit = () => (
@@ -13,6 +15,13 @@ const Visit = () => (
           and to ask any questions you may have. However you decide to reach out
           to your local taqueria, we can't wait to hear from you!
         </p>
+        <h3>Click here to navigate</h3>
+        <CustomButton
+          isLink={true}
+          href="https://www.google.com/maps/dir/?api=1&destination=Tacos+Lupe+Mesa+AZ"
+        >
+          Navigate
+        </CustomButton>
       </div>
       <div class={style["map-container"]}>
         <iframe

@@ -19,6 +19,7 @@ $tablet: 768px;
 
   .visit-text {
     width: 50%;
+    padding-right: 2rem;
 
     h1 {
       margin-top: 0px;
@@ -43,5 +44,10 @@ $tablet: 768px;
     @media screen and (max-width: $tablet - 1px) {
       width: 100%;
     }
+  }
+
+  a {
+    color: var(--main-text-background);
+    background-color: var(--tacos-green);
   }
 }
