@@ -27,9 +27,11 @@ const Home = () => {
   return (
     <main class={style.home}>
       <Hero />
-      {sectionsData.map((sData, i) => (
-        <ContentSection key={i} {...sData} />
-      ))}
+      <div class={style["home-body"]}>
+        {sectionsData.map((sData, i) => (
+          <ContentSection key={i} {...sData} />
+        ))}
+      </div>
     </main>
   );
 };
