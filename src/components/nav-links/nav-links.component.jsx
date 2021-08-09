@@ -9,18 +9,18 @@ const navData = [
     href: "/",
     content: "Home",
   },
-  {
-    href: "/about",
-    content: "About",
-  },
+  // {
+  //   href: "/about",
+  //   content: "About",
+  // },
   {
     href: "/visit",
     content: "Visit",
   },
-  {
-    href: "/contact",
-    content: "Contact",
-  },
+  // {
+  //   href: "/contact",
+  //   content: "Contact",
+  // },
   {
     href: "/order",
     content: "Order Now",
