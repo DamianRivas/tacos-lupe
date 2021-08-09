@@ -7,6 +7,7 @@ import NotFound from "./not-found/not-found.component";
 
 // Code-splitting is automated for `routes` directory
 import Home from "../routes/home/home.component";
+import Visit from "../routes/visit/visit.component";
 
 // const FourOhFour = () => <div style={"margin-top:100px"}>Not Found</div>;
 
@@ -15,6 +16,7 @@ const App = () => (
     <Header />
     <Router>
       <Home path="/" />
+      <Visit path="/visit" />
       <NotFound default />
     </Router>
     <Footer />
