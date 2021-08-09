@@ -2,6 +2,7 @@ import { h } from "preact";
 import { Router } from "preact-router";
 
 import Header from "./header/header.component";
+import Footer from "./footer/footer.component";
 
 // Code-splitting is automated for `routes` directory
 import Home from "../routes/home/home.component";
@@ -15,6 +16,7 @@ const App = () => (
       <Home path="/" />
       <FourOhFour default />
     </Router>
+    <Footer />
   </div>
 );
 
