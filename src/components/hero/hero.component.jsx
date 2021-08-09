@@ -16,12 +16,12 @@ const Hero = () => (
   <div class={style.hero}>
     <div class={style["background-image"]} style={backgroundImage} />
     <div class={style.content}>
-      <div class={style.logo}>
+      <h1 class={style.logo}>
         <img
           src="/assets/images/tacos_lupe_transparent_trimmed.png"
           alt="Tacos Lupe Logo"
         />
-      </div>
+      </h1>
       <div class={style["button-row"]}>
         <a href="tel:480-964-0025">
           <CustomButton style={{ "margin-bottom": "1.3em" }}>Call</CustomButton>
