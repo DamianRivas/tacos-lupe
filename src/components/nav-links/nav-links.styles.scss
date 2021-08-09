@@ -1,4 +1,4 @@
-$mobile: 768px;
+$tablet: 768px;
 
 .nav {
   margin-left: auto;
@@ -10,7 +10,7 @@ $mobile: 768px;
     height: 100%;
     padding: 0;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       position: absolute;
       right: 0px;
       height: calc(100vh - var(--header-height));
@@ -28,6 +28,7 @@ $mobile: 768px;
 
       li {
         opacity: 0;
+        font-size: 1.7rem;
       }
     }
 
@@ -39,7 +40,7 @@ $mobile: 768px;
       a {
         padding: 0 15px;
         height: 100%;
-        min-width: 50px;
+        min-width: 5rem;
         background: rgba(255, 255, 255, 0);
         text-decoration: none;
         color: var(--main-text-color);
@@ -75,7 +76,7 @@ $mobile: 768px;
     display: none;
     cursor: pointer;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       display: flex;
     }
 

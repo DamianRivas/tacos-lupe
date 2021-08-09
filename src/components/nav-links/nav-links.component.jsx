@@ -6,6 +6,10 @@ import style from "./nav-links.styles.scss";
 
 const navData = [
   {
+    href: "/",
+    content: "Home",
+  },
+  {
     href: "/about",
     content: "About",
   },
