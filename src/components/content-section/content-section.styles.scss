@@ -24,7 +24,11 @@ $tablet: 768px;
       letter-spacing: 2px;
       padding: 1rem 0.6rem;
       background-color: transparent;
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+      background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(50, 152, 69, 50)
+      );
       transform: translateX(-8vw);
     }
 
@@ -35,7 +39,11 @@ $tablet: 768px;
         font-size: 1.75rem;
         transform: translateX(0px);
         margin-top: 0;
-        background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #fff);
+        background-image: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0),
+          rgba(50, 152, 69, 50)
+        );
       }
     }
   }
@@ -45,6 +53,7 @@ $tablet: 768px;
     width: 50%;
     display: flex;
     align-items: center;
+    justify-content: end;
 
     .content-img {
       background-position: 50%;
@@ -67,6 +76,7 @@ $tablet: 768px;
   &:nth-child(even) {
     .img-container {
       left: 50%;
+      justify-content: start;
     }
 
     .content-body {
@@ -78,7 +88,7 @@ $tablet: 768px;
         background-image: linear-gradient(
           to right,
           rgba(255, 255, 255, 0),
-          #fff
+          rgba(50, 152, 69, 50)
         );
 
         @media screen and (max-width: $tablet) {
@@ -86,7 +96,7 @@ $tablet: 768px;
           background-image: linear-gradient(
             to top,
             rgba(255, 255, 255, 0),
-            #fff
+            rgba(50, 152, 69, 50)
           );
         }
       }

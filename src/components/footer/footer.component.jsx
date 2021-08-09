@@ -13,7 +13,9 @@ const Footer = () => {
           <p>
             <address>1352 E Broadway Rd Mesa, AZ 85204</address>
           </p>
-          <p>Tel: (480) 964-0025</p>
+          <p>
+            <a href="tel:480-964-0025">Tel: (480) 964-0025</a>
+          </p>
         </div>
       </div>
     </footer>
