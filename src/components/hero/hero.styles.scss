@@ -40,7 +40,7 @@
       img {
         width: 100%;
 
-        @media screen and (max-height: 768px) and (orientation: portrait) {
+        @media screen and (max-height: 768px) {
           max-height: 40vh;
         }
       }
@@ -48,16 +48,27 @@
 
     .button-row {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-      button,
-      a {
+      * {
         text-decoration: none;
-        margin-right: 4em;
       }
 
-      button:last-child,
-      a:last-child {
+      & > *:last-child {
         margin: 0;
+
+        @media screen and (min-width: 768px) {
+          margin-left: 2em;
+        }
+
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+          margin-top: 2rem;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
       }
     }
 
@@ -68,16 +79,6 @@
 
         img {
           width: 60%;
-        }
-      }
-
-      @media screen and (orientation: portrait) {
-        .button-row {
-          flex-direction: column;
-          button,
-          a {
-            margin: 0;
-          }
         }
       }
     }
