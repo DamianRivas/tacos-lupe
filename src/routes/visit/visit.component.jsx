@@ -17,7 +17,7 @@ const Visit = () => {
     ) {
       // window.open("maps://maps.google.com/maps?daddr=<lat>,<long>&amp;ll=");
       window.open(
-        "maps://maps.google.com/maps?daddr=Tacos+Lupe+Mesa+AZ&amp;ll="
+        "maps://maps.google.com/maps/dir/?daddr=Tacos+Lupe+Mesa+AZ&amp;ll="
       );
     } else {
       window.open(navLink);
