@@ -12,28 +12,49 @@ const backgroundImage = {
     url(/assets/images/food/carne-asada/carne-asada-xl.jpg)`,
 };
 
-const Hero = () => (
-  <div class={style.hero}>
-    <div class={style["background-image"]} style={backgroundImage} />
-    <div class={style.content}>
-      <h1 class={style.logo}>
-        <img
-          src="/assets/images/tacos_lupe_transparent_trimmed.png"
-          alt="Tacos Lupe Logo"
-        />
-      </h1>
-      <div class={style["button-row"]}>
-        <div>
-          <a href="tel:480-964-0025">
-            <CustomButton>Call</CustomButton>
-          </a>
-        </div>
-        <div>
-          <CustomButton>Visit</CustomButton>
+const Hero = () => {
+  const navLink =
+    "https://www.google.com/maps/dir/?api=1&destination=Tacos+Lupe+Mesa+AZ";
+
+  const mapsSelector = () => {
+    if (
+      /* if we're on iOS, open in Apple Maps */
+      navigator.platform.indexOf("iPhone") != -1 ||
+      navigator.platform.indexOf("iPad") != -1 ||
+      navigator.platform.indexOf("iPod") != -1
+    ) {
+      // window.open("maps://maps.google.com/maps?daddr=<lat>,<long>&amp;ll=");
+      window.open(
+        "maps://maps.google.com/maps?daddr=Tacos+Lupe+Mesa+AZ&amp;ll="
+      );
+    } else {
+      window.open(navLink);
+    }
+  };
+
+  return (
+    <div class={style.hero}>
+      <div class={style["background-image"]} style={backgroundImage} />
+      <div class={style.content}>
+        <h1 class={style.logo}>
+          <img
+            src="/assets/images/tacos_lupe_transparent_trimmed.png"
+            alt="Tacos Lupe Logo"
+          />
+        </h1>
+        <div class={style["button-row"]}>
+          <div>
+            <a href="tel:480-964-0025">
+              <CustomButton>Call</CustomButton>
+            </a>
+          </div>
+          <div>
+            <CustomButton onclick={mapsSelector}>Visit</CustomButton>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Hero;
