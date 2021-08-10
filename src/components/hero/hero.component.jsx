@@ -13,8 +13,8 @@ const backgroundImage = {
 };
 
 const Hero = () => {
-  const navLink =
-    "https://www.google.com/maps/dir/?api=1&destination=Tacos+Lupe+Mesa+AZ";
+  // const navLink = "https://www.google.com/maps/dir/?api=1&destination=Tacos+Lupe+Mesa+AZ";
+  const navLink = "https://g.page/tacos-lupe?share";
 
   const mapsSelector = () => {
     if (
