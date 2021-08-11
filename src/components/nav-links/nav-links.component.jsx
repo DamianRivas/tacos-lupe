@@ -39,9 +39,9 @@ const NavLinks = () => {
     <nav class={style.nav}>
       <ul class={isActive ? style.open : ""}>
         {navData.map(({ href, content, ...otherProps }, i) => (
-          <li key={i} style={linkStyle(i)}>
+          <li key={content + i} style={linkStyle(i)}>
             <Link
-              key={i}
+              key={`${content}-link-${i}`}
               activeClassName={style.active}
               href={href}
               onclick={() => setIsActive(false)}

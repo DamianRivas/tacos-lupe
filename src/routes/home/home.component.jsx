@@ -9,7 +9,12 @@ const Home = () => {
   const sectionsData = [
     {
       title: "Real Mexican Tacos",
-      body: `The best place to get genuine, Mexican cuisine in Arizona. Enjoy authentic, homemade tacos from your local taqueria in Mesa, AZ! Tacos Lupe creates delicious meals using fresh ingredients and real Mexican recipes, never cutting corners. We take pride in our tacos, and we know once you visit our taqueria, you'll never go anywhere else.`,
+      body: [
+        <strong key="home-section-1">
+          The best place to get genuine, Mexican cuisine in Arizona.
+        </strong>,
+        ` Enjoy authentic, homemade tacos from your local taqueria in Mesa, AZ! Tacos Lupe creates delicious meals using fresh ingredients and real Mexican recipes, never cutting corners. We take pride in our tacos, and we know once you visit our taqueria, you'll never go anywhere else.`,
+      ],
       imageSrc: "/assets/images/food/tacos-con-chile/tacos-con-chile-l.jpg",
     },
     {
@@ -19,7 +24,13 @@ const Home = () => {
     },
     {
       title: "Freshest Ingredients",
-      body: `At Tacos Lupe, we understand that the key to great tacos lies in the ingredients. We use high-quality meats and produce in our meals, ensuring there is a burst of flavor in every bite. Each taco, quesadille, and chimichanga is handcrafted for the perfect flavor experience. No matter your tastes, rest assured that you'll find something to love at your local taqueria!`,
+      body: [
+        <strong key="home-section-2">
+          At Tacos Lupe, we understand that the key to great tacos lies in the
+          ingredients.
+        </strong>,
+        ` We use high-quality meats and produce in our meals, ensuring there is a burst of flavor in every bite. Each taco, quesadille, and chimichanga is handcrafted for the perfect flavor experience. No matter your tastes, rest assured that you'll find something to love at your local taqueria!`,
+      ],
       imageSrc: "/assets/images/food/carne-asada/carne-asada-xl.jpg",
     },
   ];
@@ -29,7 +40,7 @@ const Home = () => {
       <Hero />
       <div class={style["home-body"]}>
         {sectionsData.map((sData, i) => (
-          <ContentSection key={i} {...sData} />
+          <ContentSection key={sData.title + i} {...sData} />
         ))}
       </div>
     </main>
