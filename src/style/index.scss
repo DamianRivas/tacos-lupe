@@ -31,8 +31,9 @@ body {
   margin: 0;
   border: none;
   background: var(--main-text-background);
-  font-family: "Helvetica Neue", arial, sans-serif;
-  font-weight: 400;
+  font-family: "Roboto Slab", "Helvetica Neue", arial, sans-serif;
+  font-weight: 300;
+  line-height: 2.4rem;
   color: var(--main-text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -53,7 +54,12 @@ ul {
 h1,
 h2 {
   font-family: "Patua One", sans-serif;
+  line-height: 2.7rem;
 }
+
+// p {
+//   max-width: 100ch;
+// }
 
 #app {
   height: 100%;
