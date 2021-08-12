@@ -37,7 +37,10 @@ $tablet: 768px;
       height: 100%;
       font-family: "Patua One", sans-serif;
 
-      a {
+      a,
+      .order-btn {
+        cursor: pointer;
+        user-select: none;
         padding: 0 15px;
         height: 100%;
         min-width: 5rem;

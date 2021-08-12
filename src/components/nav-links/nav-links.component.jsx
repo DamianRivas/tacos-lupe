@@ -1,6 +1,8 @@
 import { h } from "preact";
-import { useState } from "preact/hooks";
+import { useState, useContext } from "preact/hooks";
 import { Link } from "preact-router/match";
+
+import ModalContext from "../../contexts/modal-context/modal-context";
 
 import style from "./nav-links.styles.scss";
 
@@ -21,19 +23,25 @@ const navData = [
   //   href: "/contact",
   //   content: "Contact",
   // },
-  {
-    href: "/order",
-    content: "Order Now",
-  },
+  // {
+  //   href: "/order",
+  //   content: "Order Now",
+  // },
 ];
 
 const NavLinks = () => {
   const [isActive, setIsActive] = useState(false);
+  const { isModalOpen, setIsModalOpen } = useContext(ModalContext);
 
   const linkStyle = i =>
     isActive
       ? `animation: ${style.navLinkFade} 0.5s ease forwards ${i / 7 + 0.5}s`
       : "";
+
+  const handleOrderClick = () => {
+    setIsActive(false);
+    setIsModalOpen(!isModalOpen);
+  };
 
   return (
     <nav class={style.nav}>
@@ -41,6 +49,7 @@ const NavLinks = () => {
         {navData.map(({ href, content, ...otherProps }, i) => (
           <li key={content + i} style={linkStyle(i)}>
             <Link
+              aria-label={content}
               key={`${content}-link-${i}`}
               activeClassName={style.active}
               href={href}
@@ -51,6 +60,16 @@ const NavLinks = () => {
             </Link>
           </li>
         ))}
+        <li style={linkStyle(navData.length)}>
+          <div
+            role="button"
+            class={style["order-btn"]}
+            onclick={handleOrderClick}
+            tabindex="0"
+          >
+            Order Now
+          </div>
+        </li>
       </ul>
       <div
         class={style["burger-container"]}
