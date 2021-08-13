@@ -13,7 +13,8 @@ const backgroundImage = {
 };
 
 const Hero = () => {
-  const navLink = "https://g.page/tacos-lupe?share";
+  const navLink =
+    "https://www.google.com/maps/search/?api=1&query=Tacos+Lupe,+1352+E+Broadway+Rd,+Mesa,+AZ+85204";
 
   const mapsSelector = () => {
     if (
