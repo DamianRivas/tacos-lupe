@@ -40,6 +40,10 @@ body {
   background-color: var(--main-text-background);
   background-image: url("/assets/images/back-pattern.png");
   background-size: 84px;
+
+  @media screen and (max-width: 768px) {
+    line-height: 1.8rem;
+  }
 }
 
 a {
