@@ -38,9 +38,12 @@ $tablet: 768px;
   }
 
   .map-container {
-    background-color: var(--main-text-background);
-    padding: 10px;
     width: 50%;
+
+    .map-border {
+      background-color: var(--main-text-background);
+      padding: 10px;
+    }
 
     @media screen and (max-width: $tablet - 1px) {
       width: 100%;
