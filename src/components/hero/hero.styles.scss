@@ -39,6 +39,8 @@
 
       img {
         width: 100%;
+        height: auto;
+        aspect-ratio: 1200 / 818;
 
         @media screen and (max-height: 768px) {
           max-height: 40vh;

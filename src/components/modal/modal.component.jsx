@@ -57,10 +57,12 @@ const Modal = ({ children }) => {
             {deliveryProviders.map(({ name, href, imgSrc }) => (
               <CustomButton
                 key={name}
-                xClass={buttonStyle["white-green-outline"]}
+                xClass={`${buttonStyle["white-green-outline"]} ${buttonStyle.responsive}`}
                 isLink={true}
                 href={href}
-                style={{ "margin-bottom": "1rem" }}
+                style={{
+                  "margin-bottom": "1rem",
+                }}
               >
                 <img class={style["delivery-icon"]} src={imgSrc} />
               </CustomButton>

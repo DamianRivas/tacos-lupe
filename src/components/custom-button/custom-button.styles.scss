@@ -42,4 +42,8 @@
     border: 3px solid var(--tacos-green);
     color: var(--main-text-color);
   }
+
+  &.responsive {
+    width: clamp(250px, 70%, 380px);
+  }
 }

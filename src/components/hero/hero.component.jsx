@@ -42,6 +42,8 @@ const Hero = () => {
           <img
             src="/assets/images/tacos_lupe_transparent_trimmed.png"
             alt="Tacos Lupe Logo"
+            width="1200"
+            height="818"
           />
         </h1>
         <div class={style["button-row"]}>
@@ -51,7 +53,9 @@ const Hero = () => {
             </a>
           </div>
           <div>
-            <CustomButton onclick={mapsSelector}>Visit</CustomButton>
+            <CustomButton role="button" onclick={mapsSelector}>
+              Visit
+            </CustomButton>
           </div>
         </div>
       </div>
