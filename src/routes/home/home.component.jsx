@@ -15,12 +15,14 @@ const Home = () => {
         </strong>,
         ` Enjoy authentic, homemade tacos from your local taqueria in Mesa, AZ! Tacos Lupe creates delicious meals using fresh ingredients and real Mexican recipes, never cutting corners. We take pride in our tacos, and we know once you visit our taqueria, you'll never go anywhere else.`,
       ],
-      imageSrc: "/assets/images/food/tacos-con-chile/tacos-con-chile-l.jpg",
+      imageSrc:
+        "/assets/images/food/tacos-con-chile/tacos-con-chile-l-16x9.jpg",
     },
     {
       title: "Classic Mexican Experience",
       body: `Unlike a lot of "Mexican" restaurants, our menu consists of real, Mexican favorites from our home south of the border. Passed down over generations and threaded throughout our culture, our authentic tacos are loved by everyone who tries them. We refuse to cut corners or make concessions for costs because our customer satisfaction is always the top priority. Visit your local taqueria today for a Mexican experience you'll never forget!`,
-      imageSrc: "/assets/images/food/tacos-al-pastor/tacos-al-pastor-l.jpg",
+      imageSrc:
+        "/assets/images/food/tacos-al-pastor/tacos-al-pastor-l-16x9.jpg",
     },
     {
       title: "Freshest Ingredients",
@@ -31,7 +33,7 @@ const Home = () => {
         </strong>,
         ` We use high-quality meats and produce in our meals, ensuring there is a burst of flavor in every bite. Each taco, quesadille, and chimichanga is handcrafted for the perfect flavor experience. No matter your tastes, rest assured that you'll find something to love at your local taqueria!`,
       ],
-      imageSrc: "/assets/images/food/carne-asada/carne-asada-xl.jpg",
+      imageSrc: "/assets/images/food/carne-asada/carne-asada-l-16x9.jpg",
     },
   ];
 
