@@ -2,11 +2,12 @@ import { h } from "preact";
 
 import style from "./content-section.styles.scss";
 
-const ContentSection = ({ title, body, imageSrc = null, key }) => (
+const ContentSection = ({ title, body, imageSrc = null, webp = null, key }) => (
   <section key={key} class={style["c-split"]}>
     {imageSrc ? (
       <div class={style["img-container"]}>
         <picture>
+          <source sizes="" srcset={webp} type="image/webp" />
           <img
             src={imageSrc}
             alt="Image of food served at Tacos Lupe"
