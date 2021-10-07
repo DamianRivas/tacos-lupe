@@ -1,4 +1,6 @@
 import { h } from "preact";
+import { useRef, useEffect } from "preact/hooks";
+import gsap from "gsap";
 
 import CustomButton from "../custom-button/custom-button.component";
 
@@ -13,6 +15,10 @@ const backgroundImage = {
 };
 
 const Hero = () => {
+  const heroImg = useRef(null);
+  const callButton = useRef(null);
+  const navButton = useRef(null);
+
   const navLink =
     "https://www.google.com/maps/search/?api=1&query=Tacos+Lupe,+1352+E+Broadway+Rd,+Mesa,+AZ+85204";
 
@@ -34,6 +40,24 @@ const Hero = () => {
     }
   };
 
+  useEffect(() => {
+    const buttons = [callButton.current, navButton.current];
+    gsap.from(heroImg.current, {
+      duration: 1,
+      opacity: 0,
+      scale: 0.3,
+      ease: "back",
+      y: -150,
+    });
+    gsap.from(buttons, {
+      duration: 0.5,
+      opacity: 0,
+      scale: 0.3,
+      delay: 0.5,
+      y: 75,
+    });
+  }, []);
+
   return (
     <div class={style.hero}>
       <div class={style["background-image"]} style={backgroundImage} />
@@ -44,15 +68,16 @@ const Hero = () => {
             alt="Tacos Lupe Logo"
             width="1200"
             height="818"
+            ref={heroImg}
           />
         </h1>
         <div class={style["button-row"]}>
-          <div>
+          <div ref={callButton}>
             <a href="tel:480-964-0025">
               <CustomButton>Call</CustomButton>
             </a>
           </div>
-          <div>
+          <div ref={navButton}>
             <CustomButton role="button" onclick={mapsSelector}>
               Visit
             </CustomButton>

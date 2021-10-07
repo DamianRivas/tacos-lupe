@@ -69,7 +69,6 @@ $med: 1200px;
       h2 {
         padding: 2rem 1rem;
         line-height: 2.8rem;
-        transform: translateX(-8.5rem);
         display: flex;
         align-items: center;
         background-color: transparent;
@@ -91,7 +90,6 @@ $med: 1200px;
       @media screen and (min-width: $med) {
         h2 {
           justify-content: flex-end;
-          transform: translateX(8.5rem);
           background-color: transparent;
           background-image: linear-gradient(
             to right,

@@ -45,7 +45,11 @@ const Home = () => {
       <Hero />
       <div class={style["home-body"]}>
         {sectionsData.map((sData, i) => (
-          <ContentSection key={sData.title + i} {...sData} />
+          <ContentSection
+            key={sData.title + i}
+            isEven={i % 2 === 0}
+            {...sData}
+          />
         ))}
       </div>
     </main>
