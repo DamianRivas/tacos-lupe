@@ -25,7 +25,8 @@ const ContentSection = ({
         toggleActions: "restart resume none none",
       },
       opacity: 0,
-      duration: 1.5,
+      duration: 0.8,
+      ease: "power1.out",
     });
     gsap.from(pRef.current, {
       scrollTrigger: {
@@ -34,6 +35,7 @@ const ContentSection = ({
       },
       x: isEven ? "-10vw" : "10vw",
       opacity: 0,
+      duration: 1,
     });
     ScrollTrigger.matchMedia({
       "(max-width: 1199.99px)": function () {
@@ -44,6 +46,7 @@ const ContentSection = ({
           },
           x: isEven ? "10vw" : "-10vw",
           opacity: 0,
+          duration: 1,
         });
       },
       "(min-width: 1200px)": function () {
@@ -60,6 +63,7 @@ const ContentSection = ({
             },
             x: isEven ? "-10vw" : "10vw",
             opacity: 1,
+            duration: 1,
           }
         );
       },
