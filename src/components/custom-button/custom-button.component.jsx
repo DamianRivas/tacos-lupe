@@ -1,26 +1,31 @@
 import { h } from "preact";
+import { forwardRef } from "preact/compat";
 
 import style from "./custom-button.styles.scss";
 
-const CustomButton = ({ children, isLink, xClass, ...otherProps }) => {
-  if (isLink) {
+const CustomButton = forwardRef(
+  ({ children, isLink, xClass, ...otherProps }, ref) => {
+    if (isLink) {
+      return (
+        <a
+          class={`${style["custom-button"]} ${xClass ? xClass : ""}`}
+          ref={ref}
+          {...otherProps}
+        >
+          {children}
+        </a>
+      );
+    }
     return (
-      <a
+      <button
         class={`${style["custom-button"]} ${xClass ? xClass : ""}`}
+        ref={ref}
         {...otherProps}
       >
         {children}
-      </a>
+      </button>
     );
   }
-  return (
-    <button
-      class={`${style["custom-button"]} ${xClass ? xClass : ""}`}
-      {...otherProps}
-    >
-      {children}
-    </button>
-  );
-};
+);
 
 export default CustomButton;

@@ -6,21 +6,19 @@ import CustomButton from "../custom-button/custom-button.component";
 
 import style from "./hero.styles.scss";
 
-const transparency = 0.55;
-
-const backgroundImage = {
-  "background-image": `linear-gradient(rgba(0,0,0,${transparency}),
-    rgba(0,0,0,${transparency})),
-    url(/assets/images/food/carne-asada/carne-asada-xl.jpg)`,
-};
-
 const Hero = () => {
   const heroImg = useRef(null);
   const callButton = useRef(null);
   const navButton = useRef(null);
 
+  const transparency = 0.7;
   const navLink =
     "https://www.google.com/maps/search/?api=1&query=Tacos+Lupe,+1352+E+Broadway+Rd,+Mesa,+AZ+85204";
+  const backgroundImage = {
+    "background-image": `linear-gradient(rgba(0,0,0,${transparency}),
+      rgba(0,0,0,${transparency})),
+      url(/assets/images/food/carne-asada/carne-asada-xl.jpg)`,
+  };
 
   const mapsSelector = () => {
     if (
@@ -71,17 +69,13 @@ const Hero = () => {
             ref={heroImg}
           />
         </h1>
-        <div class={style["button-row"]}>
-          <div ref={callButton}>
-            <a href="tel:480-964-0025">
-              <CustomButton>Call</CustomButton>
-            </a>
-          </div>
-          <div ref={navButton}>
-            <CustomButton role="button" onclick={mapsSelector}>
-              Visit
-            </CustomButton>
-          </div>
+        <div className={style["button-row"]}>
+          <CustomButton isLink href="tel:480-964-0025" ref={callButton}>
+            Call
+          </CustomButton>
+          <CustomButton role="button" onclick={mapsSelector} ref={navButton}>
+            Visit
+          </CustomButton>
         </div>
       </div>
     </div>

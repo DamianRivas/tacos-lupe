@@ -1,12 +1,13 @@
 .custom-button {
-  text-decoration: none;
   --button-height: 50px;
+  text-decoration: none;
+  color: var(--main-text-color);
   min-width: 165px;
   width: auto;
   height: var(--button-height);
   line-height: var(--button-height);
   padding: 0 35px 0 35px;
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: "Patua One", sans-serif;
   text-align: center;
   background-color: white;
