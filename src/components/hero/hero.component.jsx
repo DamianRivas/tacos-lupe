@@ -70,7 +70,7 @@ const Hero = () => {
           />
         </h1>
         <div className={style["button-row"]}>
-          <CustomButton isLink href="tel:480-964-0025" ref={callButton}>
+          <CustomButton isLink href="tel:480-969-1867" ref={callButton}>
             Call
           </CustomButton>
           <CustomButton role="button" onclick={mapsSelector} ref={navButton}>

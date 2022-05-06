@@ -14,7 +14,7 @@ const ComingSoon = () => (
       <span class="lupe-red">Soon!</span>
     </h1>
     <h2>
-      <a href="tel:480-964-0025">(480) 964-0025</a>
+      <a href="tel:480-969-1867">(480) 969-1867</a>
     </h2>
   </section>
 );
